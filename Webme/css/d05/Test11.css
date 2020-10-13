@@ -1,0 +1,17 @@
+body{
+	Text-align: center;
+	background-color: #E7E7E8;
+	background-image: url('../../img/download/side03.jpeg');
+	background-size: 200px 200px;
+/* 	background-repeat: no-repeat; */
+	background-repeat: repeat-x;
+	background-attachment: fixed;
+	background-position: 50% 50%; /* 속성값은 x, y 순으로 기술한다 */
+}
+h1{
+	display:inline-block;
+	background-color: purple;
+	border: 3px solid white;
+	padding: 10px;
+	border-radius: 10px;
+}

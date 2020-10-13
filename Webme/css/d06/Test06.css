@@ -1,0 +1,27 @@
+html{
+	height: 100%;
+}
+body{
+	height: 100%;
+	text-align: center;
+}
+
+.Abox, .Lbox, .Rbox{
+	height: 100%;
+}
+.Mbox > .w3-row{
+	height: 32.4%;
+}
+.Mbox{
+	height: 100%;
+}
+.MboxB{
+	height: 100%;
+}
+.MboxM1, .MboxM2{
+	height: 100%;
+	margin: 10px 0px;
+}
+.MboxS1, .MboxS2, .MboxS3{
+	height: 100%;
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang=ko>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="description" content="테이블 내용">
+		<title>테이블 thead, tbody, tfoot</title>
+	</head>
+	
+	<body>
+		<section>
+		<table border="1" summary="시멘틱 테이블 관련 요소 목록" style="border-collapse: collapse;">
+			<caption>Semantic Table Tag</caption>
+			<thead>
+				<tr>
+					<th>태그 명칭</th>
+					<th>설명</th>
+					<th>사용 여부</th>
+				</tr>
+			</thead>
+			<tfoot>
+				<tr>
+					<td colspan="3">참고파일 : HTML5_03.pdf</td>
+				</tr>
+			</tfoot>
+			<tbody>
+				<tr>
+					<td>canvas 그래픽 그리기</td>
+					<td>audio/video 오디오/비디오 파일</td>
+					<td rowspan="2">예전엔 오디오/비디오를 전부 embed로 처리</td>
+				</tr>
+				<tr>
+					<td rowspan="2">track 미디여 요소 트랙(운동장 한바퀴=노래한곡) 삽입</td>
+					<td>source 미디어 소스 삽입</td>
+				</tr>
+				<tr>
+					<td colspan="2">img 이미지 파일 삽입</td>
+				</tr>
+			</tbody>
+		</table>
+		</section>
+	</body>
+</html>

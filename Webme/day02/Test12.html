@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Insert title here</title>
+	<style>
+		td{
+			text-align:center;
+			border: 1px solid red;
+		}
+		table, td{
+			border-collapse:collapse;
+		}
+
+	</style>
+	</head>
+	
+	<body>
+		<h2>1번 문제</h2>
+		<table style="width: 300px; height: 200px; border: 1px solid red;">
+			
+			<tr>
+				<td style="background-color:skyblue;" rowspan="3">nav</td>
+				<td style="background-color:orange;" colspan="3">header</td>
+			</tr>
+			<tr>
+				<td style="background-color:hotpink;" >nav</td>
+				<td style="background-color:blue;">section</td>
+				<td style="background-color:green;">aside</td>
+			</tr>
+			<tr>
+				<td style="background-color:white;" colspan="3">footer</td>
+			</tr>
+		</table>
+		
+		<h2>2번 문제</h2>
+		<table style="width: 300px; height: 200px; border: 1px solid red;">
+			
+			<tr>
+				<td style="background-color:white;" colspan="3">header</td>
+				<td style="background-color:violet;">nav</td>
+			</tr>			
+			<tr>
+				<td style="background-color:skyblue;" rowspan="3">nav</td>
+				<td style="background-color:orange;" colspan="3">header</td>
+			</tr>
+			<tr>
+				<td style="background-color:hotpink;" >nav</td>
+				<td style="background-color:blue;">section</td>
+				<td style="background-color:green;" rowspan="2">aside</td>
+			</tr>
+			<tr>
+				<td style="background-color:aqua;" colspan="2">footer</td>
+			</tr>
+		</table>
+		<h2>3번 문제</h2>
+		<table style="display:inline; width: 300px; height: 200px; border: 1px solid red;">
+			<tr>
+				<td style=" width:60px; height:60px;" rowspan="4"><img src="../img/download/07.jpg"></td>
+				<td style=" width:60px; height:60px;" rowspan="4"><img src="../img/download/07_right.jpg"></td>
+				<td style="" rowspan="2"><img src="../img/download/side01.jpg"></td>
+				<td style="color:orange;">제목</td>
+			<tr>
+				<td style="background-color:skyblue;">text</td>
+			</tr>
+				<td style="background-color:violet;" rowspan="2"><img src="../img/download/side02.jpeg"></td>
+				<td style="background-color:skyblue;">제목</td>
+			<tr>
+				<td style="background-color:skyblue;">text</td>
+			</tr>
+	
+			<tr>
+				<td style="background-color:skyblue;" colspan="2">제목</td>
+				<td style="background-color:violet; width:10px; height:10px;" rowspan="2"><img src="../img/download/side03.jpeg"></td>
+				<td style="background-color:skyblue;">제목</td>
+			</tr>
+			<tr>
+				<td style="background-color:skyblue;" colspan="2">text</td>
+				<td style="background-color:skyblue;" >text</td>
+			</tr>
+		</table>
+	</body>
+</html>

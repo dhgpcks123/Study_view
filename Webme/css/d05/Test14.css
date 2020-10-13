@@ -1,0 +1,40 @@
+body{
+	text-align: center;
+	font-size: 0px;
+}
+
+.content{
+	display: inline-block;
+	width: 700px;
+	height: 450px;
+}
+
+div > div {
+	display: inline-block;
+	width: 200px;
+	height: 140px;
+	font-size: 16pt;
+	font-weight: bold;
+	border: 2px solid white;
+	margin: 10px;
+	color: blue;
+}
+
+.d1{
+	background: radial-gradient(circle, red, yellow);
+}
+.d2{
+	background: radial-gradient(circle 60px, red, yellow);
+}
+.d3{
+	background: radial-gradient(circle 60px at 120px 80px, red, yellow);
+}
+.d4{
+	background: radial-gradient(circle 60px at 120px 80px, red, yellow, green);
+}
+.d5{
+	background: radial-gradient(circle farthest-corner at 150px 80px, red, yellow);
+}
+.d6{
+	background: radial-gradient(circle farthest-side at 150px 80px, red, yellow);
+}

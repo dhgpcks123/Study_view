@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>가상선택자</title>
+		<style type="text/css">
+			body{
+				text-align:center;
+			}
+			
+			div{
+				display: inline-block;
+				width: 450px;
+				padding: 0px;
+				text-align: center;
+			}
+			a{
+				display: block;
+				margin: 10px;
+				padding: 10px;
+				background-color: gray;
+				font-size: 15pt;
+				border: 1px dashed white;
+			}
+			a:visited{
+				color: orange;
+				text-decoration: underline;
+				border:3px doubled white;
+			}
+			a:link{
+				color: lime;
+				text-decoration: none;
+			}
+			a:hover{
+				border: 50px dotted violet;
+			}
+			a:active{
+				color: pink;
+			}
+			/*
+				border 속성
+					형식 ]
+						border: 굵기 라인형태 라인칼라;
+					라인형태 - solid dotted dashed doubled
+			*/
+			#d1{
+				width: 200px;
+				height: 50px;
+				margin: 10px;
+				border: 3px solid violet;
+			}
+			#d2{
+				width: 200px;
+				height: 50px;
+				margin: 10px;
+				border: 3px dotted pink;
+			}
+			#d3{
+				width: 200px;
+				height: 50px;
+				margin: 10px;
+				border: 3px dashed orange;
+			}
+			#d4{
+				width: 200px;
+				height: 50px;
+				margin: 10px;
+				border: 3px double indigo;
+			}
+			.dv{
+				display: block;
+				padding: 0px;
+				margin-top: 20px;
+			}
+			label {
+				display: inline-block;
+				width: 80px;
+				height: 25px;
+				font-size: 16pt;
+				text-align: right;
+			}
+			input {
+				display: inline-block;
+				width: 250px;
+				height: 25px;
+				border: 1px solid white;
+				text-align: center;
+			}
+			input:focus{
+				background-color: lightblue;
+				border: 1px solid Gold;
+				outline:none;
+			}
+		</style>
+	</head>
+	<!--
+	웹 문서에는 보이지 않지만 동작에 영향을 주는 속성을 가상 선택자로 이용
+	
+		a:link{color:blue;} link<가상선택자 : 방문하지 않았던 곳 표시
+		a:visited : 방문한 곳을 표시
+		a:active : 사용자가 링크를 클릭하는 순간을 나타낸다
+		a:hover : 마우스 포인터 올리는 순간
+		a:focus : 해당 요소에 초점이 맞춰졌을 때(커서들어 왔을 때...)
+	-->
+	<body>
+		<div>
+			<a href="Test01.html">Test01</a>
+			<a href="Sample.html">Sample</a>
+			<hr>
+			<div id="d1">solid</div>
+			<div id="d2">dotted</div>
+			<div id="d3">dashed</div>
+			<div id="d4">double</div>
+			<hr>
+			<div class="dv">
+					<label for="id">아이디 : </label>
+					<input type="text" id="id" placeholder="아이디입력">
+			</div>
+			<div class="dv">
+					<label for="addr">주소 : </label>
+					<input type="text" id="addr" placeholder="주소입력">
+			</div>
+		</div>
+	</body>
+</html>

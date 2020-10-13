@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>CSS 1st</title>
+		<style type="text/css">
+			html, body{
+				height: 100%;
+				margin: 0px;
+				padding: 0px;
+			}
+			h2 {
+				color: aqua!important;
+				text-align: right;
+			}
+			* {
+				text-align:center;
+			}
+			.p1 {
+				font-size: 20pt;
+				font-weight: bold;
+				color: green;
+			}
+			.p16{
+				color: red;				
+			}
+			.pt20{
+				font-size: 40pt;
+			}
+			#h3{
+				padding: 0px;
+				background-color: hotpink;
+				display: inline-block;
+			}
+			[type] {
+			/* type 속성을 가지고 있는 태그를 선택해서 아래속성을 부여한다.*/
+				display: inline-block;
+				width: 250px;
+				height: 25px;
+				border: 1px solid gray;
+			}
+			input[type="text"]{
+				border: 1px solid red;
+			}
+			input[type="password"]{
+				border: 1px solid blue;
+			}
+			input[type="button"]{
+				height: 55px;
+			}
+		</style>
+	</head>
+	<!--
+		태그 속성
+			text-align : 텍스트 또는 컨텐츠의 가로정렬 방식을 적용시키는 속성
+				속성값 : right, left, center
+			vertical-align : 세로정렬
+				속성값 : top, middle, bottom, ...
+			margin ; 이웃 태그와의 간격
+			padding : content와 border 사이의 간격
+			width, height : 가로세로길이
+	-->
+	
+	
+	<body style="background-color:gray;">
+		<!--
+		html - 구조. 얘도 모양만질 수 있는 속성있지만... style
+			 너무 복잡해진다. 그래서 언어별로 나눴음.
+		javascript - 기능
+		* css - 스타일 시트 표준안 모양 cascading(연속적인) style sheets
+			통일 된 양식, 데이터전송량▽, 수정용이, 보기 깔끔
+			
+			div { width: 960px; }
+			선택자 { 속성: 속성값 단위; }
+			우린 여태 inline(body안)/internal(head안) 스타일로 전송했음
+			
+		line많아지면 전송량커짐. 그래서 쓸 때는 그냥 보기 깔끔하게 쓰고
+		전송할 때 한줄로 바꿔서 전송함. min.확장자 로 저장해서 보냄.
+		
+		css적용 우선순위 강제로 적용 !important 표시 사용
+		
+		-->
+		<h2 style="background-color: red; color: orange; margin: 0px; padding: 25px;">처음 만드는 스타일!!!</h2>
+		<!-- html은 스크립트문서 위에서 하나하나 읽음. 그래서 밑에꺼 적용함 -->
+		<h2 style="text-align:center;">처음 중 두번째!</h2>
+		<p> 여기는 <b>&lt;p&gt;</b> 태그
+		<p class="p1"> 여기는 <b>&lt;222&gt;</b> 태그
+		<p class="p1 pt20"> 여기는 <b>&lt;333&gt;</b> 태그
+		<p class="p1 p16"> 여기는 <b>&lt;444&gt;</b> 태그
+		<div class="p4"><span>여기는 div 내의 span</span></div>
+		<p id="h3">inline-block</p>
+		
+		<input type="text" value="input1">
+		<input type="password" value="패스워드">
+		<input type="button" value="버튼">
+		<input type="text" value="text02">
+		<input type="text" value="text03">
+		
+	</body>
+</html>

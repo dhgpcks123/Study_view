@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="refresh" content="5">
+		<meta charset="UTF-8">
+		<title>Selector</title>
+		<style type="text/css">
+			body{
+				text-align: center;
+			}
+			h2{
+				padding:10px;
+				background-color:orangered;
+				color:white;
+			}
+			.content{
+				display: inline-block;
+				width: 500px;
+			}
+			.box{
+				display: inline-block;
+				width: 100px;
+				text-align: left;
+			}
+			input:checked{
+				display: block;
+				width: 50px;
+				height: 50px;
+			}
+		</style>
+	</head>
+	
+	<body>
+		<div class="content">
+			<h2>수강 과목 선택</h2>
+			<div class="box">
+				<input type="checkbox" name="sub" id="java"><label for="java">Java</label>
+			</div>
+			<div class="box">
+				<input type="checkbox" name="sub" id="oracle"><label for="oracle">Oracle</label>
+			</div>
+			<div class="box">
+				<input type="checkbox" name="sub" id="html5"><label for="html5">HTML5</label>
+			</div>
+			<div class="box">
+				<input type="checkbox" name="sub" id="css" ><label for="css">CSS</label>
+			</div>
+			<div class="box">
+				<input type="checkbox" name="sub" id="jsp"><label for="jsp">JSP</label>
+			</div>
+			<div class="box">
+				<input type="checkbox" name="sub" id="spring" ><label for="spring">Spring</label>
+			</div>
+			<div class="box">
+				<input type="checkbox" name="sub" id="jquery"><label for="jquery">JQuery</label>
+			</div>
+			<div class="box">
+				<input type="checkbox" name="sub" id="db"><label for="db">DB</label>
+				<!-- value는 빈 텍스트나 빈 칸에 들어가는 값이야. 여기 checkbox에서는 안 쓰는 게 맞음  -->
+			</div>
+		</div>
+	</body>
+</html>

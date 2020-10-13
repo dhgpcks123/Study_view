@@ -1,0 +1,159 @@
+body{
+	padding: 0px;
+	margin: 0px;
+	text-align: center;
+}
+
+/******로고******/
+.header_logo img{
+	width: 400px;
+	height: 200px;
+}
+
+/******아이디******/
+login{
+	display:inline-block;
+	width: 500px;
+	border: 1px red solid;
+	padding: 15px 0px;
+}
+.login_id{
+	display: inline-block;
+	width: 480px;
+	height: 110px;
+	
+}
+.login_id-label{
+	display:block;
+	text-align:left;
+	margin: 5px;
+	font-weight: bold;
+	font-size: 11pt;
+	padding-left: 15px;
+}
+.login_id-label + div{
+	border: 1px solid rgb(142, 142, 142);
+	display:inline-block;
+	padding: 7px;
+}
+.login_id input{
+	width: 340px;
+	height: 30px;
+	float: left;
+	margin: 2px;
+	border: none;
+}
+.login_id input:focus{
+	outline: none;
+}
+.login_id-text{
+	color: rgb(142, 142, 142);
+	clear: both;
+	line-height: 40px;
+	font-size: 12pt;
+}
+
+/******비밀번호******/
+
+.login_pw{
+	display: inline-block;
+	width: 480px;
+	height: 110px;
+}
+.login_pw-label{
+	display:block;
+	text-align:left;
+	margin: 5px;
+	font-weight: bold;
+	font-size: 11pt;
+	padding-left: 15px;
+}
+.login_pw-label + div{
+	border: 1px solid rgb(142, 142, 142);
+	display:inline-block;
+	padding: 7px;
+}
+.login_pw-label + div:hover{
+	border: 1px #19CE60 solid;
+}
+.login_pw input{
+	width: 400px;
+	height: 30px;
+	float: left;
+	margin: 2px;
+	border: none;
+}
+.login_pw-icorn svg{
+	color: rgb(142, 142, 142);
+	clear: both;
+	width: 30px;
+	height: 35px;
+}
+
+/******비밀번호 재확인******/
+
+.login_rpw{
+	display: inline-block;
+	width: 480px;
+	height: 110px;
+}
+.login_rpw-label{
+	display:block;
+	text-align:left;
+	margin: 5px;
+	font-weight: bold;
+	font-size: 11pt;
+	padding-left: 15px;
+}
+.login_rpw-label + div{
+	border: 1px solid rgb(142, 142, 142);
+	display:inline-block;
+	padding: 7px;
+}
+.login_rpw-label + div:hover{
+	border: 1px #19CE60 solid;
+}
+.login_rpw input{
+	width: 400px;
+	height: 30px;
+	float: left;
+	margin: 2px;
+	border: none;
+}
+.login_rpw-icorn svg{
+	color: rgb(142, 142, 142);
+	clear: both;
+	width: 30px;
+	height: 35px;
+}
+/******이름******/
+
+.info_name{
+	margin: 15px;
+	display: inline-block;
+	width: 480px;
+	height: 110px;
+}
+.info_name-label{
+	display:block;
+	text-align:left;
+	margin: 5px;
+	font-weight: bold;
+	font-size: 11pt;
+	padding-left: 15px;
+}
+.info_name-label + div{
+	border: 1px solid rgb(142, 142, 142);
+	display:inline-block;
+	padding: 7px;
+}
+.info_name-label + div:hover{
+	border: 1px #19CE60 solid;
+}
+.info_name input{
+	width: 430px;
+	height: 30px;
+	float: left;
+	margin: 2px;
+	border: none;
+}

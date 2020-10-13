@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>CSS Class</title>
+		<style type="text/css">
+			body{
+				text-align: center;
+			}
+			div{
+				border: 1px dashed white;
+				width: 600px;
+				font-size: 13pt;
+				font-weight: bold;
+				display: inline-block;
+			}
+			nav{
+				float:left;
+				width: 150px;
+				height: 125px;
+			}
+			aside{
+				float:right;
+				width: 150px;
+				height: 125px;
+			}
+			section{
+				display: inline-block;
+				width: 258px;
+			}
+			.sementic{
+				border: 2px solid white;
+				text-align: center;
+				margin: 5px;
+				padding: 30px 0px;
+				border-radius: 15px;
+			}
+			header, footer{
+				background-color: yellow;
+			}
+			nav, section, aside{
+				background-color: lightgreen;
+			}
+			.sec{
+				background-color: lightblue;
+				border-radius: 5px;
+				border: 1px solid white;
+				padding: 2px;
+				margin: 3px;
+			}
+
+		</style>
+	</head>
+	
+	<body>
+		<div>
+			<header class="sementic">&lt;header&gt;</header>
+			<nav class="sementic">&lt;nav&gt;</nav>
+			<section class="sementic">&lt;section&gt;
+				<header class="sec">&lt;header&gt;</header>
+				<article class="sec">&lt;article&gt;</article>
+				<footer class="sec">&lt;footer&gt;</footer>
+			</section>
+			<aside class="sementic">&lt;aside&gt;</aside>
+			<footer class="sementic">&lt;footer&gt;</footer>
+		</div>
+	</body>
+</html>
