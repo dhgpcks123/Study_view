@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>JavaScript Study</title>
+		<link rel="stylesheet" type="text/css" href="../css/w3.css">
+		<style type="text/css">
+
+			section, footer{
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				margin: 20px;
+				padding: 20px 0px;
+				border: 1px solid white;
+				width: 110vh;
+			}
+			nav {
+				display: flex;
+				justify-content: center;
+			}
+			.main{
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+
+			}
+			div{
+				display: flex;
+				margin: 2px;
+			}
+			input[type="button"]{
+				background-color: white;
+				width: 50vh;
+				margin: 0px 20px;
+			}
+			header{
+				display: flex;
+			}
+			label{
+				width: 15vh;
+			}
+			span{
+				background-color: white;
+			}
+
+		</style>
+		<script type="text/javascript">
+
+		</script>
+	</head>
+	
+	<body>
+		<div class="main">
+			<header>
+				<h1 class="w3-red w3-card-4 w3-center" style="width: 110vh;">회원정보입력</h1>
+			</header>
+			<section class="w3-gray w3-card-4">
+				<div>
+					<label for="id"> ID :</label>
+					<input type="text" id="id" name="id" value="ID를 입력하세요" style="width: 87vh;">
+				</div>
+				<div>
+					<label for="pw"> PW :</label>
+					<input type="password" id="pw" name="pw" value="password" style="width: 87vh;">
+				</div>
+				<div>
+					<label for="name"> 이름 :</label>
+					<input type="text" id="name" name="name" value="이름을 입력하세요" style="width: 87vh;">
+				</div>
+				<div>
+					<label for="name"> Test :</label>
+					<input type="text" id="test" name="test" value="onkeyup" style="width: 87vh;">
+				</div>
+			</section>
+			<nav>
+				<input class="w3-green w3-card-4" type="button" value="리셋" id="reset">
+				<input class="w3-blue w3-card-4" type="button" value="내용읽기" id="read">
+			</nav>
+			<footer class="w3-gray w3-card-4 w3-hide" id="show">
+				<div>
+					<label for="readid"> ID :</label>
+					<span class="w3-border" id="readid" style="padding-left: 5px; width: 87vh; height: 25px;"></span>
+				</div>
+				<div>
+					<label for="readpw"> PW :</label>
+					<span class="w3-border" id="readpw" style="padding-left: 5px; width: 87vh; height: 25px;"></span>
+				</div>
+				<div>
+					<label for="readname"> 이름 :</label>
+					<span class="w3-border" id="readname" style="padding-left: 5px; width: 87vh; height: 25px;"></span>
+				</div>
+			</footer>
+			<div class="w3-margin w3-container">공간차지 확인 문장</div>
+		</div>
+		<div class= "w3-col w3-margin-top">
+			<div class="w3-half w3-button btn" id="b1"><h3 class="w3-green w3-hover-lime">btn01</h3></div>
+			<div class="w3-half w3-button btn" id="b2"><h3 class="w3-green w3-hover-lime">btn02</h3></div>
+			<div class="w3-half w3-button btn" id="b3"><h3 class="w3-green w3-hover-lime">btn03</h3></div>
+		</div>
+		<div class= "w3-col w3-margin-bottom">
+			<div class="w3-half w3-button btn" id="b4"><h3 class="w3-green w3-hover-lime">btn04</h3></div>
+			<div class="w3-half w3-button btn" id="b5"><h3 class="w3-green w3-hover-lime">btn05</h3></div>
+			<div class="w3-half w3-button btn" id="b6"><h3 class="w3-green w3-hover-lime">btn06</h3></div>
+		</div>
+		
+		<script type="text/javascript" src="../js/js02/Test06.js"></script>
+	</body>
+</html>
