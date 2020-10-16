@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>JavaScript Study</title>
+		<link rel="stylesheet" type="text/css" href="../css/w3.css">
+		<link rel="stylesheet" type="text/css" href="../css/js03/Test01.css">
+		
+		<script type="text/javascript">
+			/*
+				함수 만드는 방법
+				
+					함수의 종류
+						일반함수
+							형식 1 ]
+								function 함수이름(매개변수리스트){
+									함수실행내용
+								}
+							형식 2 ]
+								var 함수이름 = function(매개변수리스트){
+									함수실행내용
+								}
+						무명함수 -no이름
+								 =>변수에 담는 경우나 즉시 실행, 콜백함수
+								 
+							예 ]
+								 	$('#id').click(function(){
+								 		// 이 경우 무명함수는 콜백함수가 된다
+								 		// click()이 함수 내부에서 호출하는 함수
+								 	});
+								 	
+							형식 1 ]
+								function(){}
+							
+			*/
+		</script>
+	</head>
+	<body>
+		<div class="main">
+			<header>
+				<h1 class="w3-orange w3-card-4">색상선택</h1>
+			</header>
+
+			<section class="w3-border w3-margin w3-card-4 w3-padding" id="colorpanel">
+				<h3 class="w3-center" style="font-size:10pt;" id="colorpick">선택 색상 없음</h3>
+				<div id="inimg" style="width:120px; height:120px;"></div>
+			</section>
+			<nav>
+				<div class="btn-pan1">
+					<input type="button" value="red" class="btn w3-border w3-red w3-margin w3-padding w3-card-4" id="red">
+					<input type="button" value="teal" class="btn w3-border w3-teal w3-margin w3-padding w3-card-4" id="teal">
+					<input type="button" value="purple" class="btn w3-border w3-purple w3-margin w3-padding w3-card-4" id="purple">
+					<input type="button" value="green" class="btn w3-border w3-green w3-margin w3-padding w3-card-4" id="green">
+				</div>
+				<div class="btn-pan2">	
+					<input type="button" value="indigo" class="btn w3-border w3-indigo w3-margin w3-padding w3-card-4" id="indigo">
+					<input type="button" value="blue" class="btn w3-border w3-blue w3-margin w3-padding w3-card-4" id="blue">
+					<input type="button" value="aqua" class="btn w3-border w3-aqua w3-margin w3-padding w3-card-4" id="aqua">
+					<input type="button" value="pink" class="btn w3-border w3-pink w3-margin w3-padding w3-card-4" id="pink">
+
+				</div>
+			</nav>
+		</div>
+		<script type="text/javascript" src="../js/js03/Test01.js"></script>
+	</body>
+</html>
