@@ -2,62 +2,119 @@
 <html lang="ko">
 	<head>
 	<meta charset="UTF-8">
-	<meta http-equiv="refresh" content="3">
 	<title>네이버 : 회원가입</title>
+	<script type="text/javascript" src="js/NaverJoin.js"></script>
 	<link rel="stylesheet" type="text/css" href="css/NaverJoinStylesheet.css">
 	</head>
 	
-	<body>
+	<body onload="func01()">
 		<header>
 			<div class="header_logo">
 				<a class="header_logo-a" href="https://www.naver.com">
 				<img src="img/네이버로고.png"></a>
 			</div>
 		</header>
-		
-		<section class="login">
-			<div class="login_id">
-				<label class="login_id-label" for="id">아이디</label>
-				<div>
-					<input type="text" name=id>
-					<span class="login_id-text">
-						@naver.com
-					</span>
+		<section class="fullsection">
+			<div class="login">
+				<div class="login_id" id="login_id">
+					<label class="login_id-label" for="id">아이디</label>
+					<div>
+						<input class="login_id-input" type="text" name="id" id="id" maxlength="12">
+						<span class="login_id-text" id="mailadrr">
+							@naver.com
+						</span>
+					</div>
+				</div>
+				<div class="login_check" id="login_id_check"></div>
+				<div class="login_pw">
+					<label class="login_pw-label" for="pw">비밀번호</label>
+					<div id="idbox">
+						<input class="login_pw-input" type="password" name="pw" id="pw">
+						<span class="login_pw-icorn" id="login_pw-userlock">
+							<svg id="login_pw-icorn" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"></path></svg>
+						</span>
+					</div>
+				</div>
+				<div class="login_check" id="login_pw_check"></div>
+				<div class="login_rpw">
+					<label class="login_rpw-label" for="rpw">비밀번호 재확인</label>
+					<div id="rpwbox">
+						<input class="login_pw-input" type="password" name="rpw" id="rpw">
+						<span class="login_rpw-icorn">
+						<svg id="login_rpw-icorn" class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5 9V7a5 5 0 0110 0v2a2 2 0 012 2v5a2 2 0 01-2 2H5a2 2 0 01-2-2v-5a2 2 0 012-2zm8-2v2H7V7a3 3 0 016 0z" clip-rule="evenodd"></path></svg>					</span>
+					</div>
+				</div>
+				<div class="login_check" id="login_rpw_check"></div>
+				
+			</div>
+			<div class="info">
+				<div class="info_name">
+					<label class="info_name-label" for="name">이름</label>
+					<div id="namebox">
+						<input class="info_name-input" type="text" name="name" id="name">
+					</div>
+				</div>
+				<div class="info_birth">
+					<label class="info_birth-label" for="year">생년월일</label>
+					<div>	
+						<div class="info_birth-div" id="yearbox">
+							<input class="info_birth-year" type="text" name="year" id="year" placeholder="년(4자)">
+						</div>
+						<div class="info_birth-div" id="monthbox">
+							<select class="info_birth-month" name="month" id="month"></select>
+						</div>
+						<div class="info_birth-div" id="daybox">
+							<input class="info_birth-day" type="text" name="day" id="day" placeholder="일">
+						</div>
+					</div>
+				</div>
+				<div class="info_gen">
+					<label class="info_gen-label" for="gen">성별</label>
+					<div id="genbox">
+						<select class="info_gen-input" type="text" name="gen" id="gen"></select>
+					</div>
+				</div>
+				<div class="info_checkmail">
+					<label class="info_checkmail-label" for="checkmail">본인 확인 이메일<span>(선택)</span></label>
+					<div id="checkmailbox">
+						<input class="info_checkmail-input" type="text" name="checkmail" id="checkmail" placeholder="선택입력">
+					</div>
 				</div>
 			</div>
-			<div class="login_pw">
-				<label class="login_pw-label" for="pw">비밀번호</label>
-				<div>
-					<input type="password" name=pw>
-					<span class="login_pw-icorn">
-						<svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"></path></svg>
-					</span>
+			<div class="phone">
+				<div class="phone_nation">
+					<label class="phone_nation-label" for="number">휴대전화</label>
+					<div id="nationbox">
+						<select class="phone_nation-select" name="name" id="nation"></select>
+					</div>
+				</div>
+				<div class="phone_number">
+					<div id="numberbox">
+						<input class="phone_number-input" type="text" name="name" id="number" placeholder="전화번호 입력">
+					</div>
+					<div class="phone_number-outline">
+						<div class="phone_number-btn">인증번호 받기</div>
+					</div>
+				</div>
+				<div class="phone_check">
+					<div>
+						<input class="phone_check-input" type="text" name="name" placeholder="인증번호 입력하세요" disabled>
+					</div>
 				</div>
 			</div>
-			<div class="login_rpw">
-				<label class="login_rpw-label" for="rpw">비밀번호 재확인</label>
-				<div>
-					<input type="password" name=rpw>
-					<span class="login_rpw-icorn">
-					<svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5 9V7a5 5 0 0110 0v2a2 2 0 012 2v5a2 2 0 01-2 2H5a2 2 0 01-2-2v-5a2 2 0 012-2zm8-2v2H7V7a3 3 0 016 0z" clip-rule="evenodd"></path></svg>					</span>
-				</div>
+			<div class="joinbutton">
+				<div class="joinbutton-input" type="button" name="name"><span>가입하기</span></div>
 			</div>
 		</section>
-		<section class="info">
-			<div class="info_name">
-				<label class="info_name-label" for="name">이름</label>
-				<div>
-					<input type="text" name="name">
-				</div>
-			</div>
-		</section>
-		
 		<footer>
-		이용약관
-		개인정보처리방침
-		책임의 한계와 법적고지
-		회원정보 고객센터
-		ⓒ NAVER Corp
+			<ul>
+				<li><a href="https://policy.naver.com/rules/service.html">이용약관</a></li>
+				<li><a href="https://policy.naver.com/policy/privacy.html"><strong>| 개인정보처리방침</strong></a></li>
+				<li><a href="https://policy.naver.com/rules/disclaimer.html">| 책임의 한계와 법적고지</a></li>
+				<li><a href="https://help.naver.com/support/service/main.help?serviceNo=532&_membership_p.membership_p.membership_26">| 회원정보 고객센터</a></il>
+				<li><a href="https://www.navercorp.com/">ⓒ NAVER Corp</a></li>
+			</ul>
 		</footer>
+		
 	</body>
 </html>

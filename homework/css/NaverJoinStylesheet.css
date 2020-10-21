@@ -1,27 +1,62 @@
+/******공통******/
 body{
 	padding: 0px;
 	margin: 0px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.fullsection{
+	display: flex;	
+	flex-direction: column;
+	align-items: center;
 	text-align: center;
+	max-width: 600px;
+	margin-bottom: 50px;
 }
 
-/******로고******/
-.header_logo img{
+.login_pw-input, .login_rpw-input{
 	width: 400px;
-	height: 200px;
+	height: 30px;
+	float: left;
+	margin: 2px;
+	border: none;
+}
+.info_name-input, .info_gen-input, .info_checkmail-input{
+	width: 430px;
+	height: 30px;
+	float: left;
+	margin: 2px;
+	border: none;
 }
 
+
+
+
+
+
+
+
+		/******로고******/
+		.header_logo img{
+			width: 280px;
+			height: 140px;
+		}
+
+
+		/*로그인폼*/
+		.login{
+			display:inline-block;
+			width: 500px;
+			padding: 15px 0px;
+		}
+		
 /******아이디******/
-login{
-	display:inline-block;
-	width: 500px;
-	border: 1px red solid;
-	padding: 15px 0px;
-}
+
 .login_id{
 	display: inline-block;
 	width: 480px;
-	height: 110px;
-	
+	height: 100px;
 }
 .login_id-label{
 	display:block;
@@ -31,19 +66,22 @@ login{
 	font-size: 11pt;
 	padding-left: 15px;
 }
+
 .login_id-label + div{
 	border: 1px solid rgb(142, 142, 142);
 	display:inline-block;
 	padding: 7px;
 }
-.login_id input{
+
+.login_id-input{
 	width: 340px;
 	height: 30px;
 	float: left;
 	margin: 2px;
 	border: none;
 }
-.login_id input:focus{
+
+.login_id-input:focus{
 	outline: none;
 }
 .login_id-text{
@@ -58,7 +96,7 @@ login{
 .login_pw{
 	display: inline-block;
 	width: 480px;
-	height: 110px;
+	height: 100px;
 }
 .login_pw-label{
 	display:block;
@@ -73,16 +111,7 @@ login{
 	display:inline-block;
 	padding: 7px;
 }
-.login_pw-label + div:hover{
-	border: 1px #19CE60 solid;
-}
-.login_pw input{
-	width: 400px;
-	height: 30px;
-	float: left;
-	margin: 2px;
-	border: none;
-}
+
 .login_pw-icorn svg{
 	color: rgb(142, 142, 142);
 	clear: both;
@@ -95,7 +124,7 @@ login{
 .login_rpw{
 	display: inline-block;
 	width: 480px;
-	height: 110px;
+	height: 100px;
 }
 .login_rpw-label{
 	display:block;
@@ -110,29 +139,26 @@ login{
 	display:inline-block;
 	padding: 7px;
 }
-.login_rpw-label + div:hover{
-	border: 1px #19CE60 solid;
-}
-.login_rpw input{
-	width: 400px;
-	height: 30px;
-	float: left;
-	margin: 2px;
-	border: none;
-}
+
 .login_rpw-icorn svg{
 	color: rgb(142, 142, 142);
 	clear: both;
 	width: 30px;
 	height: 35px;
 }
-/******이름******/
 
+		/*인포폼*/
+		.info{
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			width: 500px;
+		}
+/******이름******/
 .info_name{
-	margin: 15px;
 	display: inline-block;
 	width: 480px;
-	height: 110px;
+	height: 100px;
 }
 .info_name-label{
 	display:block;
@@ -147,13 +173,219 @@ login{
 	display:inline-block;
 	padding: 7px;
 }
-.info_name-label + div:hover{
-	border: 1px #19CE60 solid;
+/******생년월일******/
+.info_birth{
+	display: inline-block;
+	width: 480px;
+	height: 100px;
 }
-.info_name input{
+.info_birth-label{
+	display:block;
+	text-align:left;
+	margin: 5px;
+	font-weight: bold;
+	font-size: 11pt;
+	padding-left: 15px;
+}
+.info_birth-label + div{
+	display: flex;
+	padding: 7px;
+	justify-content: space-around;
+}
+.info_birth-div{
+	border: 1px solid rgb(142, 142, 142);
+	display:inline-block;
+	padding: 7px;
+}
+.info_birth-year, .info_birth-month, .info_birth-day{
+	width: 125px;
+	height: 30px;
+	border: none;
+}
+/******성별******/
+.info_gen{
+	display: inline-block;
+	width: 480px;
+	height: 100px;
+}
+.info_gen-label{
+	display:block;
+	text-align:left;
+	margin: 5px;
+	font-weight: bold;
+	font-size: 11pt;
+	padding-left: 15px;
+}
+.info_gen-label + div{
+	border: 1px solid rgb(142, 142, 142);
+	display:inline-block;
+	padding: 7px;
+}
+/******본인 확인 이메일******/
+.info_checkmail{
+	display: inline-block;
+	width: 480px;
+	height: 120px;
+}
+.info_checkmail-label{
+	display:block;
+	text-align:left;
+	margin: 5px;
+	font-weight: bold;
+	font-size: 11pt;
+	padding-left: 15px;
+}
+.info_checkmail-label + div{
+	border: 1px solid rgb(142, 142, 142);
+	display:inline-block;
+	padding: 7px;
+}
+.info_checkmail-label span{
+	color: rgb(142,142,142);
+	font-size: 10pt;
+}
+
+
+		/*휴대전화폼*/
+		.phone{
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			width: 500px;
+			height: 260px;
+		}
+/******국가******/
+.phone_nation{
+	display: inline-block;
+	width: 480px;
+	height: 100px;
+}
+.phone_nation-label{
+	display:block;
+	text-align:left;
+	margin: 5px;
+	font-weight: bold;
+	font-size: 11pt;
+	padding-left: 15px;
+}
+.phone_nation-label + div{
+	border: 1px solid rgb(142, 142, 142);
+	display:inline-block;
+	padding: 7px;
+}
+.phone_nation-select{
 	width: 430px;
 	height: 30px;
 	float: left;
 	margin: 2px;
 	border: none;
+}
+
+/******전화번호 입력******/
+.phone_number{
+	display: flex;
+	justify-content: center;
+	width: 470px;
+	height: 50px;
+}
+.phone_number > div{
+	border: 1px solid rgb(142, 142, 142);
+	display:inline-block;
+	padding: 7px;
+}
+.phone_number-input{
+	width: 291px;
+	height: 30px;
+	border: none;
+}
+.phone_number-outline{
+	height: 34px;
+	width: 111px;
+	margin-left: 10px;
+	background-color: #03C75A;
+}
+.phone_number-btn{
+	display: flex;
+	align-items: center;
+	justify-content :center;
+	height: 34px;
+	color: white;
+	cursor: pointer;
+}
+/******인증번호 입력******/
+.phone_check{
+	display: flex;
+	justify-content: center;
+	margin-top: 20px;
+}
+.phone_check > div{
+	border: 1px solid rgb(142, 142, 142);
+	display:inline-block;
+	padding: 7px;
+}
+.phone_check-input{
+	width: 291px;
+	height: 30px;
+	border: none;
+}
+
+.phone_check-input{
+	width: 430px;
+	height: 30px;
+	float: left;
+	border: none;
+}
+
+
+/******가입하기 버튼******/
+.joinbutton{
+	width: 450px;
+	height: 48px;
+	cursor: pointer;
+}
+.joinbutton-input{
+	width: 450px;
+	height: 48px;
+	background-color: #03C75A;
+	border-radius: 1px;
+}
+.joinbutton-input > span{
+	display: inline-block;
+	font-size: 20px;
+	color: white;
+	margin-top: 8px;
+}
+
+footer > ul{
+	width: 400px;
+	height: 50px;
+	text-align: center;
+	margin: 0px;
+	padding-right: 30px;
+}
+footer > ul> li{
+	list-style-type: none;
+	display:inline-block;
+}
+footer > ul> li> a{
+	outline: none;
+	text-decoration: none;
+	font-size: 11px;
+	color: rgb(142, 142, 142);
+}
+footer > ul> li> a:hover{
+	color: green;
+	font-weight: bold;
+	text-decoration: underline;
+	
+}
+
+
+/*로그인 체크*/
+.login_check{
+	max-width: 500px;
+	margin-left: 25px;
+	text-align: left;
+	font-size: 10pt;
+	margin: 0px 0px 10px 25px;
 }
