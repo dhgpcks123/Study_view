@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<people>
+	<person>
+		<name>장성환</name>
+		<id>hwan</id>
+		<age>27</age>
+		<tel>010-2222-2222</tel>
+	</person>
+	<person>
+		<name>오혜찬</name>
+		<id>chan</id>
+		<age>28</age>
+		<tel>010-3333-3333</tel>
+		<!-- 예전에 XML로 이렇게 통신 사용 -->
+		<!-- 데이터 찾는 법 : 어느 태그에 몇번째 꺼 정보 -->
+		<!-- 정보가 계속 늘어나면 파일사이즈가 계속 커짐.  중복 많음. -->
+		<!-- 나온 형태가 JSON형태 -->
+	</person>
+</people>
