@@ -1,0 +1,42 @@
+
+body{
+	display: flex;
+	justify-content: center;
+}
+#dataForm{
+	display: flex;
+	flex-direction: column;
+	width: 80vh;
+}
+#listForm{
+	display: flex;
+	justify-content: space-around;
+	margin: 15px 0px;
+	padding: 5px;
+}
+
+#idForm > div{
+	display: flex;
+	justify-content: space-around;
+	margin-bottom: 15px;
+	flex-wrap: wrap;
+}
+#idForm > div > div{
+	width: 95px;
+	margin: 4px;
+}
+#contentForm{
+	display: flex;
+	justify-content: center;
+	border: 2px dashed blue;
+}
+#contentBox{
+	width: 350px;
+	height: 350px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+#contentBox > div{
+	font-size: 18pt;
+}
